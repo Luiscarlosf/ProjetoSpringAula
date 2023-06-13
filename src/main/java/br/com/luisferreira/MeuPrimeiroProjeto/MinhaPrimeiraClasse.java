@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class MinhaPrimeiraClasse {
 
     @GetMapping("/")
-    public String meuPrimeiroMetodo(){
-        return "Hello World! Luis Carlos Ferreira.";
+    public String  meuPrimeiroMetodo(){
+        return "Meu nome é Luis Carlos Ferreira.";
     }
 
 }
