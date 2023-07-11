@@ -47,7 +47,7 @@ public class Variaveis {
 
     public void nome(){
 
-        System.out.print(nome);
+        System.out.println(nome);
     }
 
     @GetMapping("/soma")
@@ -82,7 +82,15 @@ public class Variaveis {
 
     }
 
+    /*@GetMapping("/arrayString2")
 
+    public void arrayStr2(){
+
+        System.out.println(familia[2]);
+
+    }
+    exemplar de como selecionar um elemento específico de um array
+    */
 
     }
 
