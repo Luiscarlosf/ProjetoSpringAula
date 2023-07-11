@@ -19,6 +19,8 @@ public class Variaveis {
     Integer[] numeros = {1, 6, 8, 15, 22};
     String[] familia = {"Cláudio", "Noeli", "Patrícia", "Pablo", "Edecir"};
     Float[] notas = {9.0F, 8.4F, 2.9F, 4.2F};
+    Integer[] numerosInt = new Integer[7];
+    Integer[] numerosInt2 = new Integer[4];
 
     @GetMapping("/idade")
 
@@ -103,6 +105,39 @@ public class Variaveis {
         }
 
         return new Float[]{soma / notas.length};
+    }
+
+    @GetMapping("/arrayInteiro")
+
+    public Integer[] arrayInteiros(){
+
+        numerosInt[0] = 1;
+        numerosInt[1] = 6;
+        numerosInt[2] = 4;
+        numerosInt[3] = 8;
+        numerosInt[4] = 16;
+        numerosInt[5] = 0;
+        numerosInt[6] = 10;
+
+        return numerosInt;
+    }
+
+    @GetMapping("/arrayInteiroSoma")
+
+    public Integer[] arrayInteirosSoma(){
+
+        numerosInt2[0] = 3;
+        numerosInt2[1] = 9;
+        numerosInt2[2] = 4;
+        numerosInt2[3] = 5;
+
+        Integer somaT = 0;
+        for (int i = 0; i < numerosInt2.length; i++) {
+            somaT = somaT + numerosInt2[i];
+        }
+
+        return new Integer[]{somaT};
+        
     }
     }
 
