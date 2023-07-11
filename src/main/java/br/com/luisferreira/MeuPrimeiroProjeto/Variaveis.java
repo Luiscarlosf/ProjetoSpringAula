@@ -18,6 +18,7 @@ public class Variaveis {
     Integer quantidade = 3;
     Integer[] numeros = {1, 6, 8, 15, 22};
     String[] familia = {"Cláudio", "Noeli", "Patrícia", "Pablo", "Edecir"};
+    Float[] notas = {9.0F, 8.4F, 2.9F, 4.2F};
 
     @GetMapping("/idade")
 
@@ -92,5 +93,16 @@ public class Variaveis {
     exemplar de como selecionar um elemento específico de um array
     */
 
+    @GetMapping("/mediaNotas")
+
+    public Float[] arrayNot(){
+
+        float soma = 0F;
+        for(int i = 0; i < notas.length; i++){
+            soma = soma + notas[i];
+        }
+
+        return new Float[]{soma / notas.length};
+    }
     }
 
