@@ -103,8 +103,8 @@ public class Variaveis {
         for(int i = 0; i < notas.length; i++){
             soma = soma + notas[i];
         }
-
-        return new Float[]{soma / notas.length};
+        Float[] returno = {soma / notas.length};
+        return returno;
     }
 
     @GetMapping("/arrayInteiro")
@@ -137,7 +137,7 @@ public class Variaveis {
         }
 
         return new Integer[]{somaT};
-        
+
     }
     }
 
