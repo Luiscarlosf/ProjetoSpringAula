@@ -12,24 +12,24 @@ public class somadorNumerico {
 
     public String somaVariaveis(@PathVariable("numero") int numero, @PathVariable("numero2") int numero2, @PathVariable("numero3") int numero3, @PathVariable("numero4") int numero4){
 
-        Integer[] soma = {numero, numero2, numero3, numero4};
+        Integer[] numerosParaSoma = {numero, numero2, numero3, numero4};
         Integer somador = 0;
         Integer numeroMaior = 0; //como inicializar sem a necessidade de atribuir um valor?
         Integer numeroMenor = 0; //como inicializar sem a necessidade de atribuir um valor?
 
-        for (int i = 0; i < soma.length; i++) {
+        for (int i = 0; i < numerosParaSoma.length; i++) {
 
-            somador = somador + soma[i];
+            somador = somador + numerosParaSoma[i];
 
-            if(soma[i] > numeroMaior) {
+            if(numerosParaSoma[i] > numeroMaior) {
 
-                numeroMaior = soma[i];
+                numeroMaior = numerosParaSoma[i];
 
             }
+//                   lógica não está sendo aplicada corretamente.
+            if(numerosParaSoma[i] < numeroMenor || numeroMenor == 0) {
 
-            if(soma[i] < numeroMenor || numeroMenor == 0) {
-
-                numeroMenor = soma[i];
+                numeroMenor = numerosParaSoma[i];
 
             }
 
