@@ -14,8 +14,8 @@ public class somadorNumerico {
 
         Integer[] numerosParaSoma = {numero, numero2, numero3, numero4};
         Integer somador = 0;
-        Integer numeroMaior = 0; //como inicializar sem a necessidade de atribuir um valor?
-        Integer numeroMenor = 0; //como inicializar sem a necessidade de atribuir um valor?
+        Integer numeroMaior = 0;
+        Integer numeroMenor = numerosParaSoma[0];
 
         for (int i = 0; i < numerosParaSoma.length; i++) {
 
@@ -26,8 +26,8 @@ public class somadorNumerico {
                 numeroMaior = numerosParaSoma[i];
 
             }
-//                   lógica não está sendo aplicada corretamente.
-            if(numerosParaSoma[i] < numeroMenor || numeroMenor == 0) {
+            
+            if(numerosParaSoma[i] < numeroMenor) {
 
                 numeroMenor = numerosParaSoma[i];
 
