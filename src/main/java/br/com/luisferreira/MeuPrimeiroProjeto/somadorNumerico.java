@@ -26,7 +26,7 @@ public class somadorNumerico {
                 numeroMaior = numerosParaSoma[i];
 
             }
-            
+
             if(numerosParaSoma[i] < numeroMenor) {
 
                 numeroMenor = numerosParaSoma[i];
