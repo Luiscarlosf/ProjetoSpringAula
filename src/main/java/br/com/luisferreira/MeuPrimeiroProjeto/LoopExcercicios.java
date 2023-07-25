@@ -159,11 +159,16 @@ public class LoopExcercicios {
 
     }
 
-    @GetMapping("/trianguloDeAsteriscos")
+/*    @GetMapping("/trianguloDeAsteriscos") -> estudar melhor a construção.
     public void trianguloDeAsteriscos(){
 
-        
+        StringBuilder triangulo = new StringBuilder();
+        Integer n = 10;
+        for(int i = 0; i < n; i++){
+            triangulo.append("*");
+            System.out.println(triangulo.toString());
+        }
 
     }
-
+*/
 }
